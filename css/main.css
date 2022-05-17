@@ -1,14 +1,127 @@
-h1 {
-  font-family: "Sofia", sans-serif;
-  font-size: 200%;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Sofia', sans-serif;
 }
 
-#content {
-  background-color: #B8F1B0;
-  margin: auto;
-  width: 50%;
-  border: 3px solid green;
-  padding: 200px;
+.content{
+  width: 100%;
+  height: 100vh;
+  background: #B8F1B0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn{
+  padding: 10px 60px;
+  margin-top: 10px;
+  background: #green;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 30px;
+}
+
+.instructions{
+  width: 400px;
+  background: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   text-align: center;
-  line-height: 100px;
+  padding: 30px 30px 30px;
+  color: #333;
+  transition: transform 1s, top 1s;
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+.close-instructions{
+  opacity: 0;
+}
+
+.box{
+  width: 400px;
+  background: green;
+  border-radius: 6px;
+  text-align: center;
+  color: #333;
+  display: flex;
+}
+
+#seedbar {
+    float: top;
+
+    width: 95vw;
+    height: 10vh;
+    margin: 30px;
+    border: 2px solid black;
+    padding: 2px;
+    text-align: center;
+}
+
+#pot {
+    float: left;
+
+    width: 50vw;
+    height: 75vh;
+    margin: 30px;
+    border: 3px solid black;
+    padding:5px;
+    text-align: center;
+
+}
+
+#text-display {
+    float: right;
+
+    width: 35vw;
+    height: 20vh;
+    margin: 30px;
+    border: 3px solid black;
+    padding: 5px;
+    text-align: center;
+
+}
+
+#toolbar {
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 35vw;
+    height: 49vh;
+    margin: 30px;
+    border: 3px solid black;
+    padding: 5px;
+    text-align: center;
+
+}
+
+#watercan {
+    float: top;
+    flex-direction: row;
+
+    width: 100%;
+    margin: 2px;
+    border: 2px solid black;
+    padding: 2px;
+    text-align: center;
+}
+
+#seedselect {
+    float: bottom;
+    flex-direction: row;
+
+    width: 100%;
+    margin: 2px;
+    border: 2px solid black;
+    padding: 2px;
+    text-align: center;
 }

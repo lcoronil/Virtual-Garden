@@ -1,18 +1,29 @@
 <!DOCTYPE html>
-  <head>
-    <title>Virtual Garden</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script src="js/main.js" defer></script>
-  </head>
-  <body>
-    <div id="content">
-  	<h1>Virtual Garden</h1>
-  	<p>Start growing your very own garden! </p>
-    <button id='start-button'>Start</button>
-    <p></p>
-    <button id='info-button'>more info</button>
-  </div>
-</body>
+<html>
+<head>
+  <title>Virtual Garden</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <div class="content">
+    <div class="instructions" id="instructions">
+			<h1>Welcome to Virtual Garden!</h1>
+      <h2>Start growing your very own garden!</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor orci eu lobortis elementum nibh tellus molestie. Eu non diam phasellus vestibulum lorem sed risus. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Tellus at urna condimentum mattis pellentesque id. Metus vulputate eu scelerisque felis imperdiet proin fermentum leo vel. Sed turpis tincidunt id aliquet risus feugiat in ante. Ullamcorper malesuada proin libero nunc consequat interdum varius sit amet. At varius vel pharetra vel. Nunc vel risus commodo viverra maecenas accumsan. Volutpat sed cras ornare arcu.Fringilla urna porttitor rhoncus dolor. Ante metus dictum at tempor commodo ullamcorper a lacus. Nunc non blandit massa enim nec dui nunc. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Ac odio tempor orci dapibus. Bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida. Risus nec feugiat in fermentum posuere urna nec tincidunt. Cursus euismod quis viverra nibh. Sit amet nulla facilisi morbi tempus. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Sed sed risus pretium quam vulputate dignissim. Turpis cursus in hac habitasse platea. At varius vel pharetra vel turpis nunc eget lorem dolor. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue. Magna eget est lorem ipsum dolor sit amet consectetur adipiscing. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed. Libero enim sed faucibus turpis in eu mi bibendum. Sit amet massa vitae tortor condimentum.
+			</p>
+			<button type="submit" class="btn" onclick="closeInstructions()">Enter Garden</button>
+		</div>
 
-  <div id="play">
-<!-- i don't really know how to make the button change divs i forgot oops -->
+    <div class="main">
+			<div class="box" id="seedbar">Expanding seedbar</div>
+			<div class="box" id="pot">Main Pot</div>
+			  <div class="box" id="text-display">Text display</div>
+			  <div class="box" id="toolbar">Toolbar which contains:
+			      <div class="box" id="watercan">watercan</div>
+			      <div class="box" id="seedselect">other tools</div>
+			  </div>
+		</div>
+
+</body>
+</html>
