@@ -1,0 +1,13 @@
+h1 {
+
+}
+
+#content {
+  background-color: #B8F1B0;
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 200px;
+  text-align: center;
+  line-height: 100px;
+}
