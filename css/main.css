@@ -57,7 +57,7 @@
 
 .box{
   width: 400px;
-  background: green;
+  background: lightgrey;
   border-radius: 6px;
   text-align: center;
   color: #333;
@@ -66,13 +66,26 @@
 
 #seedbar {
     float: top;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 
     width: 95vw;
     height: 10vh;
     margin: 30px;
     border: 2px solid black;
     padding: 2px;
-    text-align: center;
+    overflow: hidden;
+}
+
+.seedbox {
+  border-radius: 3px;
+  width: 150px;
+  height: 200px;
+}
+
+.seedimage {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 #pot {
@@ -99,23 +112,40 @@
 
 }
 
+.draggable{
+  cursor: grab;
+}
+
 #toolbar {
     float: right;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repreat(2, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, 50%);
+    margin-right: 30px;
 
     width: 35vw;
     height: 49vh;
-    margin: 30px;
-    border: 3px solid black;
-    padding: 5px;
-    text-align: center;
+}
 
+#toolbar img{
+  width: 200px;
+  height: 300px;
 }
 
 #watercan {
-    float: top;
-    flex-direction: row;
+    grid-column: 1;
+    grid-row: 1;
+
+    width: 100%;
+    margin: 2px;
+    border: 2px solid black;
+    padding: 2px;
+}
+
+#scissors {
+    grid-column: 2;
+    grid-row: 1;
 
     width: 100%;
     margin: 2px;
@@ -124,13 +154,24 @@
     text-align: center;
 }
 
-#seedselect {
-    float: bottom;
-    flex-direction: row;
+#fertilizer{
+  grid-column: 1;
+  grid-row: 2;
 
-    width: 100%;
-    margin: 2px;
-    border: 2px solid black;
-    padding: 2px;
-    text-align: center;
+  width: 100%;
+  margin: 2px;
+  border: 2px solid black;
+  padding: 2px;
+  text-align: center;
+}
+
+#pHreader{
+  grid-column: 2;
+  grid-row: 2;
+
+  width: 100%;
+  margin: 2px;
+  border: 2px solid black;
+  padding: 2px;
+  text-align: center;
 }
