@@ -89,6 +89,10 @@
   height: 100%;
 }
 
+.bury {
+  transition: transform 1s;
+}
+
 #pot {
     float: left;
 
@@ -113,10 +117,12 @@
     height: 20vh;
     margin: 30px;
     border: 3px solid black;
-    padding: 5px;
-    text-align: center;
+    padding: 10px;
+    display flex;
 
+    font-size: 2vw;
 
+    overflow: scroll;
 }
 
 .draggable{
