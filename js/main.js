@@ -17,7 +17,7 @@ var potIsEmpty = true;
 var potIsReady = false;
 const begoniaStages = ["Beginaiseed2.png", "Begoniasprout.png", "Begoniastage2.png", "Begoniastage3.png"]
 const songbirdStages = ["Songbird_Seed2.png", "Songbird_Stage_One.png", "Songbird_Stage_Two.png", "Songbird_Stage_Three.png", "Songbird_Stage_Four.png", "Songbird.png"]
-const sunflowerStages = ["Sunflower_Seed2.png", "Sunflower_Stage_One.png", "Sunflower_Stage_Two.png", "Sunflower_Stage_3.png", "Sunflower_Stage_Four.png", "Sunflower.png"]
+const sunflowerStages = ["Sunflower_Seed2.png", "Sunflower_Stage_One.png", "Sunflower_Stage_Two.png", "Sunflower_Stage_3.png", "Sunflower_Stage_Four_.png", "Sunflower.png"]
 
 // update Pot function
 function updatePot() {
@@ -26,6 +26,22 @@ function updatePot() {
 	console.log("  growthStage: ", growthStage)
 	console.log("  potIsEmpty: ", potIsEmpty)
 	console.log("  potIsReady: ", potIsReady)
+	var imgsrc = "img/";
+	if (flowerType == "songbird" && growthStage >= 0 && growthStage <= 5 ) {
+		imgsrc += songbirdStages[growthStage]
+		document.getElementById("potimg").src = imgsrc;
+		console.log(imgsrc);
+	}
+	else if (flowerType == "sunflower" && growthStage >= 0 && growthStage <= 5) {
+		imgsrc += sunflowerStages[growthStage]
+		document.getElementById("potimg").src = imgsrc;
+		console.log(imgsrc);
+	}
+	else if (flowerType == "begonia" && growthStage >= 0 && growthStage <= 3) {
+		imgsrc += begoniaStages[growthStage]
+		document.getElementById("potimg").src = imgsrc;
+		console.log(imgsrc);
+	}
 }
 
 // Dragging functions below
@@ -67,6 +83,7 @@ potdiv.addEventListener('drop', ev => {
 		growthStage = -1;
 		potIsEmpty = true;
 		potIsReady = false;
+		document.getElementById("potimg").src = "";
 	}
 	else if (droppedData == "fertilizerimg") {
 		console.log("dropped img is fertilizerimg");
