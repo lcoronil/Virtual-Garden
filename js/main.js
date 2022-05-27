@@ -112,8 +112,8 @@ potdiv.addEventListener('drop', ev => {
 			potIsEmpty = false;
 		}
 	}
-	else if (droppedData == "beginiaseed") {
-		console.log("dropped img is beginiaseed");
+	else if (droppedData == "begoniaseed") {
+		console.log("dropped img is begoniaseed");
 		if (potIsReady) {
 			flowerType = "begonia"
 			potIsEmpty = false;
