@@ -15,7 +15,7 @@ var flowerType = "";
 var growthStage = -1;
 var potIsEmpty = true;
 var potIsReady = false;
-const begoniaStages = ["Beginaiseed2.png", "Begoniasprout.png", "Begoniastage2.png", "Begoniastage3.png"]
+const begoniaStages = ["Beginaiseed2.png", "Begoniasprout.png", "Begoniastage2.png", "Begoniastage3.png", "Begoniastage4.png", "Begoniaflower.png"]
 const songbirdStages = ["Songbird_Seed2.png", "Songbird_Stage_One.png", "Songbird_Stage_Two.png", "Songbird_Stage_Three.png", "Songbird_Stage_Four.png", "Songbird.png"]
 const sunflowerStages = ["Sunflower_Seed2.png", "Sunflower_Stage_One.png", "Sunflower_Stage_Two.png", "Sunflower_Stage_3.png", "Sunflower_Stage_Four_.png", "Sunflower.png"]
 
