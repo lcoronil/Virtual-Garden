@@ -18,6 +18,7 @@ var potIsReady = false;
 const begoniaStages = ["Beginiaseed2.png", "Begoniasprout.png", "Begoniastage2.png", "Begoniastage3.png", "Begoniastage4.png", "Begoniaflower.png"]
 const songbirdStages = ["Songbird_Seed2.png", "Songbird_Stage_One.png", "Songbird_Stage_Two.png", "Songbird_Stage_Three.png", "Songbird_Stage_Four.png", "Songbird.png"]
 const sunflowerStages = ["Sunflower_Seed2.png", "Sunflower_Stage_One.png", "Sunflower_Stage_Two.png", "Sunflower_Stage_3.png", "Sunflower_Stage_Four_.png", "Sunflower.png"]
+const zinniaStages = ["Zinnia_seed.png", "Zinnia_Stage_One.png", "Zinnia_Stage_Two.png"]
 const sunflowerText = [
 	"- Plant seed 2 to 4 inches deep in soil, 12 to 24 inches apart from one another.- There are many different looking sunflower seeds because there are over 70 varieties.<br>- You typically want to wait to plant the seeds after the last frost of the year so the cold does not kill the seed.<br>- Water it each day and see its progress!",
 	"Stage 1 text insert here",
@@ -74,6 +75,12 @@ function updatePot() {
 		imgsrc += begoniaStages[growthStage]
 		document.getElementById("potimg").src = imgsrc;
 		text.textContent = begoniaText[growthStage];
+		console.log(imgsrc);
+	}
+	else if (flowerType == "zinnia" && growthStage >= 0 && growthStage <=5) {
+		imgsrc += zinniaStages[growthStage]
+		document.getElementById("potimg").src = imgsrc;
+		text.textContent = zinniaText[growthStage];
 		console.log(imgsrc);
 	}
 }
@@ -157,6 +164,13 @@ potdiv.addEventListener('drop', ev => {
 		console.log("dropped img is begoniaseed");
 		if (potIsReady) {
 			flowerType = "begonia"
+			potIsEmpty = false;
+		}
+	}
+	else if (droppedData == "zinniaseed") {
+		console.log("dropped img is zinniaseed");
+		if (potIsReady) {
+			flowerType = "zinnia"
 			potIsEmpty = false;
 		}
 	}
