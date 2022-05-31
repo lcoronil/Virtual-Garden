@@ -121,6 +121,7 @@ potdiv.addEventListener('drop', ev => {
 		if (!potIsEmpty && potIsReady) {
 			growthStage++;
 		}
+		updatePot();
 	}
 	else if (droppedData == "scissorsimg") {
 		console.log("dropped img is scissorsimg");
@@ -130,6 +131,7 @@ potdiv.addEventListener('drop', ev => {
 		potIsReady = false;
 		document.getElementById("potimg").src = "img/empty.gif";
 		text.textContent = "Nice! Now let's try growing other plants!";
+		updatePot();
 	}
 	else if (droppedData == "fertilizerimg") {
 		console.log("dropped img is fertilizerimg");
@@ -140,10 +142,20 @@ potdiv.addEventListener('drop', ev => {
 		}
 	}
 	else if (droppedData == "pHimg") {
-		console.log("dropped img is pHimg");
-		if (potIsReady) {
-			console.log("measuring pH scale");
-
+		if (flowerType == "") {
+			text.textContent = "- The ideal pH level to grow plants differs depending on the specific plant.\r\n\r\n- Some plants thrive in more acidic soil than others.\r\n\r\n- On average though, most plants are able to grow in pH levels of 5.5 - 7.0."
+		}
+		else if (flowerType == "songbird") {
+			text.textContent = "- pH level of 6.1 - 7.5 is ideal for the soil for a Songbird plant."
+		}
+		else if (flowerType == "zinnia") {
+			text.textContent = "- pH level of 6.5 - 7.0 is ideal for the soil for a Zinnia plant."
+		}
+		else if (flowerType == "sunflower") {
+			text.textContent = "- pH level of 6.0 - 7.5 is ideal for the soil for a Songbird plant."
+		}
+		else if (flowerType == "begonia") {
+			text.textContent = "- pH level of 5.2 - 6.0 is ideal for the soil for a Begonia plant."
 		}
 	}
 	else if (droppedData == "songbirdseed") {
@@ -152,6 +164,10 @@ potdiv.addEventListener('drop', ev => {
 			flowerType = "songbird"
 			potIsEmpty = false;
 		}
+		else {
+			text.textContent = "Put in fertilizer before planting the seed!"
+		}
+		updatePot();
 	}
 	else if (droppedData == "sunflowerseed") {
 		console.log("dropped img is sunflowerseed");
@@ -159,6 +175,10 @@ potdiv.addEventListener('drop', ev => {
 			flowerType = "sunflower"
 			potIsEmpty = false;
 		}
+		else {
+			text.textContent = "Put in fertilizer before planting the seed!"
+		}
+		updatePot();
 	}
 	else if (droppedData == "begoniaseed") {
 		console.log("dropped img is begoniaseed");
@@ -166,6 +186,10 @@ potdiv.addEventListener('drop', ev => {
 			flowerType = "begonia"
 			potIsEmpty = false;
 		}
+		else {
+			text.textContent = "Put in fertilizer before planting the seed!"
+		}
+		updatePot();
 	}
 	else if (droppedData == "zinniaseed") {
 		console.log("dropped img is zinniaseed");
@@ -173,8 +197,12 @@ potdiv.addEventListener('drop', ev => {
 			flowerType = "zinnia"
 			potIsEmpty = false;
 		}
+		else {
+			text.textContent = "Put in fertilizer before planting the seed!"
+		}
+		updatePot();
 	}
-	updatePot();
+
 })
 
 // still testing below
