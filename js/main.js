@@ -15,12 +15,12 @@ var flowerType = "";
 var growthStage = 0;
 var potIsEmpty = true;
 var potIsReady = false;
-const begoniaStages = ["Beginiaseed2.png", "Begoniasprout.png", "Begoniastage2.png", "Begoniastage3.png", "Begoniastage4.png", "Begoniaflower.png"]
-const songbirdStages = ["Songbird_Seed2.png", "Songbird_Stage_One.png", "Songbird_Stage_Two.png", "Songbird_Stage_Three.png", "Songbird_Stage_Four.png", "Songbird.png"]
-const sunflowerStages = ["Sunflower_Seed2.png", "Sunflower_Stage_One.png", "Sunflower_Stage_Two.png", "Sunflower_Stage_3.png", "Sunflower_Stage_Four_.png", "Sunflower.png"]
+const begoniaStages = ["Beginiaseed.png", "Begoniasprout.png", "Begoniastage2.png", "Begoniastage3.png", "Begoniastage4.png", "Begoniaflower.png"]
+const songbirdStages = ["Songbird_Seed.png", "Songbird_Stage_One.png", "Songbird_Stage_Two.png", "Songbird_Stage_Three.png", "Songbird_Stage_Four.png", "Songbird.png"]
+const sunflowerStages = ["Sunflower_Seed.png", "Sunflower_Stage_One.png", "Sunflower_Stage_Two.png", "Sunflower_Stage_3.png", "Sunflower_Stage_Four_.png", "Sunflower.png"]
 const zinniaStages = ["Zinnia_seed.png", "Zinnia_Stage_One.png", "Zinnia_Stage_Two.png"]
 const sunflowerText = [
-	"- Plant seed 2 to 4 inches deep in soil, 12 to 24 inches apart from one another.- There are many different looking sunflower seeds because there are over 70 varieties.<br>- You typically want to wait to plant the seeds after the last frost of the year so the cold does not kill the seed.<br>- Water it each day and see its progress!",
+	"- Plant seed 2 to 4 inches deep in soil, 12 to 24 inches apart from one another.\r\n\r\n- There are many different looking sunflower seeds because there are over 70 varieties.\r\n\r\n- You typically want to wait to plant the seeds after the last frost of the year so the cold does not kill the seed.\r\n\r\n- Water it each day and see its progress!",
 	"Stage 1 text insert here",
 	"Stage 2 text insert here",
 	"Stage 3 text insert here",
@@ -44,12 +44,12 @@ const songbirdText = [
 	"Final stage text insert here"
 ]
 const zinniaText = [
-	"Plant seed info text",
-	"Stage 1 text insert here",
-	"Stage 2 text insert here",
-	"Stage 3 text insert here",
-	"Stage 4 text insert here",
-	"Final stage text insert here"
+	"- Zinnias are able to adapt to most soil conditions, but the ideal soil is rich in organic matter and well-draining.\r\n\r\n- It is recommended to grow zinnia seeds right in the garden bed, they do not like to be transplanted.\r\n\r\n- From the seed, they'll grow quickly.\r\n\r\n- Sow zinnia seeds quarter-inch deep. After planting it will take several weeks to months before blooms appear.\r\n\r\n- When seedlings reach 3 inches tall, you must maximize their air circulation so they're 6-18 inches apart. It reduces the development of powdery mildew.",
+	"- Zinnias are one of the easiest wildflowers to grow\r\n\r\n- Zinnias need full sun (6-8 hours of sunlight) to get plentiful blooms",
+	"- There are 3 main kinds of zinnia flowers, single, semidouble, double. The difference between them is by the number of rows of petals and whether the center of the flowers are visible. \r\n\r\n- Single - single row of petals and visible center\r\n\r\n- Double - numerous rows of petals and centers not visible\r\n\r\n- Semidouble - in between single and double, numerous rows of petals but visible centers",
+	"- Zinnias are sensitive to frost.\r\n\r\n- They'll grow in minimum temperatures of 60 degrees F but a range of 74-84 degrees F is preferred for growing.",
+	"After zinnias flower, cut off old flowers (a process called 'deadheading') to allow more flowers to form.",
+	"- Zinnias generally take 60-70 days to bloom. \r\n\r\n- Zinnias are annuals and will die in the frost of fall. To reseed them let the last flowers mature fully and scatter their seeds."
 ]
 // update Pot function
 function updatePot() {
