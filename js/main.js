@@ -152,7 +152,7 @@ potdiv.addEventListener('drop', ev => {
 			text.textContent = "- pH level of 6.5 - 7.0 is ideal for the soil for a Zinnia plant."
 		}
 		else if (flowerType == "sunflower") {
-			text.textContent = "- pH level of 6.0 - 7.5 is ideal for the soil for a Songbird plant."
+			text.textContent = "- pH level of 6.0 - 7.5 is ideal for the soil for a Sunflower plant."
 		}
 		else if (flowerType == "begonia") {
 			text.textContent = "- pH level of 5.2 - 6.0 is ideal for the soil for a Begonia plant."
