@@ -49,7 +49,7 @@ const zinniaText = [
 	"- There are 3 main kinds of zinnia flowers, single, semidouble, double. The difference between them is by the number of rows of petals and whether the center of the flowers are visible. \r\n\r\n- Single - single row of petals and visible center\r\n\r\n- Double - numerous rows of petals and centers not visible\r\n\r\n- Semidouble - in between single and double, numerous rows of petals but visible centers",
 	"- Zinnias are sensitive to frost.\r\n\r\n- They'll grow in minimum temperatures of 60 degrees F but a range of 74-84 degrees F is preferred for growing.",
 	"After zinnias flower, cut off old flowers (a process called 'deadheading') to allow more flowers to form.",
-	"- Zinnias generally take 60-70 days to bloom. \r\n\r\n- Zinnias are annuals and will die in the frost of fall. To reseed them let the last flowers mature fully and scatter their seeds."
+	"- Zinnias generally take 60-70 days to bloom. \r\n\r\n- Zinnias are annuals and will die in the frost of fall. To reseed them let the last flowers mature fully and scatter their seeds. \r\n\r\n"
 ]
 // update Pot function
 function updatePot() {
@@ -63,24 +63,52 @@ function updatePot() {
 		imgsrc += songbirdStages[growthStage]
 		document.getElementById("potimg").src = imgsrc;
 		text.textContent = songbirdText[growthStage];
+		if (growthStage == 5) {
+			const link = document.createElement("a");
+			link.setAttribute('href', "https://www.gardenia.net/plant/aquilegia-songbird-bluebird-columbine");
+			link.setAttribute('target', "_blank");
+			link.textContent = 'More info on Songbird';
+			text.appendChild(link);
+		}
 		console.log(imgsrc);
 	}
 	else if (flowerType == "sunflower" && growthStage >= 0 && growthStage <= 5) {
 		imgsrc += sunflowerStages[growthStage]
 		document.getElementById("potimg").src = imgsrc;
 		text.textContent = sunflowerText[growthStage];
+		if (growthStage == 5) {
+			const link = document.createElement("a");
+			link.setAttribute('href', "https://en.wikipedia.org/wiki/Common_sunflower");
+			link.setAttribute('target', "_blank");
+			link.textContent = 'More info on Sunflower';
+			text.appendChild(link);
+		}
 		console.log(imgsrc);
 	}
 	else if (flowerType == "begonia" && growthStage >= 0 && growthStage <= 5) {
 		imgsrc += begoniaStages[growthStage]
 		document.getElementById("potimg").src = imgsrc;
 		text.textContent = begoniaText[growthStage];
+		if (growthStage == 5) {
+			const link = document.createElement("a");
+			link.setAttribute('href', "https://en.wikipedia.org/wiki/Begonia");
+			link.setAttribute('target', "_blank");
+			link.textContent = 'More info on Begonia';
+			text.appendChild(link);
+		}
 		console.log(imgsrc);
 	}
 	else if (flowerType == "zinnia" && growthStage >= 0 && growthStage <=5) {
 		imgsrc += zinniaStages[growthStage]
 		document.getElementById("potimg").src = imgsrc;
 		text.textContent = zinniaText[growthStage];
+		if (growthStage == 5) {
+			const link = document.createElement("a");
+			link.setAttribute('href', "https://en.wikipedia.org/wiki/Zinnia");
+			link.setAttribute('target', "_blank");
+			link.textContent = 'More info on Zinnia';
+			text.appendChild(link);
+		}
 		console.log(imgsrc);
 	}
 }

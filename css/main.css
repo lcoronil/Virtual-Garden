@@ -111,6 +111,10 @@
     margin-bottom: 10px;
     white-space: pre-line;
     text-align: left;
+
+    background-color: #a17f5c;
+    font-family: 'Dekko';font-size: 22px;
+    color: white;
 }
 
 .biggrid {
