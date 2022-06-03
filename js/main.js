@@ -34,11 +34,11 @@ const zinniaStages = ["Zinnia_seed.png", "Zinnia_Stage_One.png", "Zinnia_Stage_T
 // Text displays for each plant
 const sunflowerText = [
 	"- Plant seed 2 to 4 inches deep in soil, 12 to 24 inches apart from one another.\r\n\r\n- There are many different looking sunflower seeds because there are over 70 varieties.\r\n\r\n- You typically want to wait to plant the seeds after the last frost of the year so the cold does not kill the seed.\r\n\r\n- Water it each day and see its progress!",
-	"Stage 1 text insert here",
-	"Stage 2 text insert here",
-	"Stage 3 text insert here",
-	"Stage 4 text insert here",
-	"Final stage text insert here"
+	"- Ideally, sunflowers would grow best under six to eight hours of sunlight exposure a day.\r\n\r\n- Sunflower also grow the best under nutrient-rich soil, so make sure the soil is mixed with compost or other organic matter. ",
+	"- If you planted a sunflower breed that averages the height of 10feet or taller, it is recommended that the sunflower is planted in a sheltered area.\r\n\r\n- The reason for this is that strong winds can tip them over and destroy the flower.\r\n\r\n- In contrast, if your breed is “short stuff” or “teddy bear” sunflower, it's possible to plant in a pot, as long as it is deep enough to allow extension of tap root.",
+	"- Some common mistakes that can occur while gardening are planting too early, the pot being too small, fungal diseases, and not enough sunlight.\r\n\r\n- Sunflowers should be planted around March to May, depending on which month that averages at least 60 degrees Fahrenheit.\r\n\r\n- The pots for sunflowers should be at least 12-18inches deep for the roots to be able to grow down.\r\n\r\n- When you spot diseases like rust and powdery mildew, spray the infected leaves with garden fungicide which you can find at home improvement stores.\r\n\r\n- Lastly, make sure to water deeply but not too much so that sunflowers can grow deep roots.\r\n\r\n- Also adjust the amount of water according to how hot or dry the environment is. ",
+	"- Once a flower buds you will notice that the head follows the sun each day to get the maximum amount of sunlight, hence its name sunflower.\r\n\r\n- Some of the recommended flower types are “Russian Mammoth” that grows over 12 feet tall and blooms with edible seeds,\r\n\r\n- “Autumn Beauty” which comes in color variation of yellow, orange, bronze and red petals,\r\n\r\n- and “Schweinitz's Sunflower” which is known as the rarest species uh America.\r\n\r\n- The one you are growing right now is American Giant!",
+	"- When fully grown, depending on the variety of sunflower, they will range to be 4 to 16 feet tall.\r\n\r\n- Their lifespan is 4-6 months, and they only bloom once a year in which the head dies within two weeks of blooming.\r\n\r\n- Once the flower petals start falling, you can harvest the seeds from the brown middle parts of the sunflower! "
 ]
 const begoniaText = [
 	"- Begonia seeds are as small as 4-15×2-9mm so unlike other plants, you can not place each seed individually. \r\n\r\n- Just sprinkle on top of a light, well-drained soil and wait till it germinates. The germination ends faster under warm conditions for about 70-80 degrees fahrenheit and sunlight isn't required.",
